@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>davcalendardemo</id>
+    <name>Dav Calendar Demo</name>
+    <summary>Demo</summary>
+    <description><![CDATA[Demo]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="developer@georgehrke.com" >Georg Ehrke</author>
+    <namespace>DavCalendarDemo</namespace>
+    <category>tools</category>
+    <bugs>https://example.com</bugs>
+    <dependencies>
+        <nextcloud min-version="19" max-version="19"/>
+    </dependencies>
+	<types>
+		<dav/>
+	</types>
+	<sabre>
+		<calendar-plugins>
+			<plugin>OCA\DavCalendarDemo\DAV\CalendarPlugin</plugin>
+		</calendar-plugins>
+	</sabre>
+</info>
